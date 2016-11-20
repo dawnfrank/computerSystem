@@ -32,8 +32,8 @@ unsigned rotate_left(unsigned x, int n){
 }
 
 int main(){
-	printf("rotate_left(0)=%x\n",rotate_left(0x12345678,0));
-	printf("rotate_left(4)=%x\n",rotate_left(0x12345678,4));
-	printf("rotate_left(20)=%x\n",rotate_left(0x12345678,20));
+	printf("rotate_left(0x12345678,0)=%x\n",rotate_left(0x12345678,0));
+	printf("rotate_left(0x12345678,4)=%x\n",rotate_left(0x12345678,4));
+	printf("rotate_left(0x12345678,20)=%x\n",rotate_left(0x12345678,20));
 	return 0;
 }
