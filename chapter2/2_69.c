@@ -26,7 +26,7 @@
  */
 
 unsigned rotate_left(unsigned x, int n){
-	int w = sizeof(x)*8;
+	int w = sizeof(x) << 3;
 	unsigned lower = x >> (w-n-1) >> 1;
 	return (x <<= n)|lower;
 }

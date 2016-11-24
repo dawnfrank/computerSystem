@@ -32,7 +32,7 @@
 #define TMax INT_MAX
 
 int saturating_add(int x, int y){
-	int w = sizeof(int) >> 3;
+	int w = sizeof(int) << 3;
 	int mask = 1 << w -1;
 	int posmask = (mask^x)&&(mask^y)&&((x+y)&mask);
 	int negmask = (mask&x)&&(mask&y)&&((x+y)^mask);

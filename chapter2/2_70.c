@@ -25,7 +25,7 @@
  */
 
 int fits_bits(int x,int n){
-	int w = sizeof(int) >> 3;
+	int w = sizeof(int) << 3;
 	return x << (w - n -1) >> (w-1) & 0x1;
 }
 
