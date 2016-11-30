@@ -47,7 +47,7 @@ int B(int x,int y){
 	return ((x+y)<<4) + y-x == 17*y+15*x;
 }
 
-// ~x = -x + 1
+//~x = -x -1
 int C(int x,int y){
 	return ~x+~y+1 == ~(x+y);
 }
