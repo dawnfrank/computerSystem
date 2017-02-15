@@ -69,6 +69,7 @@ unsigned f2u(float x){
  }
 
 int main(){
+	printf("%x\n",f2u(3.1415926));
 	printf("float_le(0.0,-0.0)=%d\n",float_le(0.0,-0.0));
 	printf("float_le(-2.5,2.5)=%d\n",float_le(-2.5,2.5));
 	printf("float_le(2.5,-2.5)=%d\n",float_le(2.5,-2.5));
